@@ -8,8 +8,10 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
+flightList=()=>{
+  return this.http.get("http://localhost:8080/viewflight")
+}
 
-  
   addData=(data:any)=>{
     return this.http.post("http://localhost:8080/addflight",data)
   }

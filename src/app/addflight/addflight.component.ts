@@ -13,22 +13,24 @@ export class AddflightComponent implements OnInit {
   flightname=""
   origin=""
   destination=""
-  Capacity=""
-
+ 
   status:boolean=false
 
   readValues=()=>{
     let data={
-      "flightname":this.flightname,
+    "flightname":this.flightname,
     "origin":this.origin,
     "destination":this.destination,
-    "Capacity":this.Capacity
+  
     }
     console.log(data)
     this.myapi.addData(data).subscribe(
       (response)=>{
         console.log(response)
         alert("successfully added")
+        this.flightname=""
+        this.origin=""
+        this.destination=""
         this.status=true
       }
     )
