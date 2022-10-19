@@ -7,17 +7,22 @@ import { AddflightComponent } from './addflight/addflight.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ViewallflightComponent } from './viewallflight/viewallflight.component';
 
 const appRoutes:Routes=[
   {
     path:"",component:AddflightComponent
+  },
+  {
+    path:"view",component:ViewallflightComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddflightComponent
+    AddflightComponent,
+    ViewallflightComponent
   ],
   imports: [
     BrowserModule,
