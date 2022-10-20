@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ViewallflightComponent } from './viewallflight/viewallflight.component';
+import { SeachflightComponent } from './seachflight/seachflight.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes:Routes=[
   {
@@ -15,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"view",component:ViewallflightComponent
+  },
+  {
+    path:"search",component:SeachflightComponent
   }
 ]
 
@@ -22,7 +27,9 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     AddflightComponent,
-    ViewallflightComponent
+    ViewallflightComponent,
+    SeachflightComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
