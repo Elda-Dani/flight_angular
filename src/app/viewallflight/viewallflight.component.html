@@ -11,6 +11,7 @@
         <th scope="col">Flight Name</th>
         <th scope="col">Origin</th>
         <th scope="col">Destination</th>
+        <th scope="col">Capacity</th>
         <th scope="col">Delete</th>
 
       </tr>
@@ -23,6 +24,7 @@
         <td>{{i.flightname}}</td>
         <td>{{i.origin}}</td>
         <td>{{i.destination}}</td>
+        <td>{{i.capacity}}</td>
         <td><button class="btn btn-success" (click)="deleteFlights(i.id)">Delete</button></td>
        
 
